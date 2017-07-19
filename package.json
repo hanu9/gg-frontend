@@ -1,0 +1,33 @@
+{
+  "name": "gg-frontend",
+  "version": "1.0.0",
+  "description": "GG Frontend Panel",
+  "main": "server/app.js",
+  "scripts": {
+    "start": "nodemon ./server/bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hanu9/gg-frontend.git"
+  },
+  "author": "Hanuman Sahay Jat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hanu9/gg-frontend/issues"
+  },
+  "homepage": "https://github.com/hanu9/gg-frontend#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "connect-redis": "^3.3.0",
+    "cookie-parser": "^1.4.3",
+    "debug": "^2.6.8",
+    "express": "^4.15.3",
+    "express-session": "^1.15.4",
+    "html-minifier": "^3.5.2",
+    "nunjucks": "^3.0.1",
+    "request": "^2.81.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}

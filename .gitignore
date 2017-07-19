@@ -1,0 +1,13 @@
+# Webpack output directories, and generated static assets
+public
+
+# Dependency directory
+# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git-
+node_modules
+
+# Debug log from npm
+npm-debug.log
+
+# Mac OS X
+.DS_Store
+dump.rdb
