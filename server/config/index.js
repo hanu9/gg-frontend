@@ -9,6 +9,7 @@ switch (process.env.NODE_ENV) {
                 host: '172.21.24.22',
                 port: 6379
             },
+            host: "http://localhost:3070",
             loggerPath: '/data/logs'
         };
         break;
@@ -19,6 +20,7 @@ switch (process.env.NODE_ENV) {
                 host: '127.0.0.1',
                 port: 6379
             },
+            host: "http://localhost:3070",
             loggerPath: '/tmp'
         };
         break;
@@ -29,6 +31,7 @@ switch (process.env.NODE_ENV) {
                 host: '127.0.0.1',
                 port: 6379
             },
+            host: "http://localhost:3070",
             loggerPath: '/tmp'
         };
 }
