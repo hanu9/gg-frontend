@@ -24,10 +24,13 @@
     "express": "^4.15.3",
     "express-session": "^1.15.4",
     "html-minifier": "^3.5.2",
+    "node-uuid": "^1.4.8",
     "nunjucks": "^3.0.1",
-    "request": "^2.81.0"
+    "request": "^2.81.0",
+    "winston-daily-rotate-file": "^1.4.6"
   },
   "devDependencies": {
-    "nodemon": "^1.11.0"
+    "nodemon": "^1.11.0",
+    "winston": "^2.3.1"
   }
 }

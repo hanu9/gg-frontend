@@ -6,11 +6,17 @@ const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const session = require('express-session');
 const nunjucks = require('nunjucks');
+const uuid = require('node-uuid');
 const config = require('./config');
 const indexRoute = require("./routes");
 
 let app = express();
 let RedisStore = require('connect-redis')(session);
+
+app.use(function(req, res, next) {
+  req.id = uuid.v4();
+  next();
+});
 
 app.use(session({
   key: 'gg-frontend.sid',
