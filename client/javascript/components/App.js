@@ -8,9 +8,6 @@ const App = () => {
     return (
         <MuiThemeProvider>
             <div>
-                <Link to={"/"}>Home</Link><br/>
-                <Link to={"/about"}>About</Link><br/>
-                <Link to={"/courses"}>courses redirect</Link>
                 <Switch>
                     {
                         routes.map( (route, i) => (
