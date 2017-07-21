@@ -14,7 +14,7 @@ const extractSass = new ExtractTextPlugin({
 module.exports = (env = {}) => {
     return {
         entry: {
-            vendor: ["react","react-dom","react-router","material-ui"],
+            vendor: ["react","react-dom","react-router","material-ui","redux","react-redux","react-router-redux","redux-thunk"],
             app: "./app" //application code
         },
         output:{
