@@ -3,16 +3,31 @@ import "./stylesheets/app.scss";
 
 import React from "react";
 import { render } from "react-dom";
-import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
-import MyAwesomeReactComponent from "./javascript/MyAwesomeReactComponent";
+import { Route, Switch, Redirect } from "react-router";
+import { BrowserRouter, Link } from "react-router-dom";
+import routes from "./routes";
 
-const App = () => (
-    <MuiThemeProvider>
-        <MyAwesomeReactComponent />
-    </MuiThemeProvider>
-);
+const App = () => {
+    return (
+        <div>
+            {/*
+            <Link to={"/"}>Home</Link><br/>
+            <Link to={"/about"}>About</Link><br/>
+            <Link to={"/courses"}>courses redirect</Link>
+            */}
+            <Switch>
+                {
+                    routes.map( route => (
+                        <Route {...route} key={route.name}/>
+                    ))
+                }
+            </Switch>
+        </div>
+    );
+};
 
-render(
-    <App />,
-    document.getElementById("app")
-);
+render((
+    <BrowserRouter>
+        <App />
+    </BrowserRouter>
+),document.getElementById("app"));
