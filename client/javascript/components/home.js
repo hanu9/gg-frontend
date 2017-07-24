@@ -1,12 +1,19 @@
 import React from "react";
+import Paper from 'material-ui/Paper';
 
-import RaisedButton from "material-ui/RaisedButton";
-import AppBar from "material-ui/AppBar";
+const style = {
+  height: 500,
+  width: 400,
+  textAlign: "center",
+  display: "block",
+  margin: "40px auto 0"
+};
 
 const Home = (props) => (
     <div>
-        <AppBar title="Title" iconClassNameRight="muidocs-icon-navigation-expand-more"></AppBar>
-        <RaisedButton label="Default"></RaisedButton>
+        <Paper style={style} zDepth={1}>
+            <iframe src="https://accounts-uat.paytm.com/oauth2/authorize?response_type=code&client_id=persona-test&scope=paytm&redirect_uri=http://local.paytm.com/token&theme=diy" width="400" height="470" frameBorder="0"></iframe>
+        </Paper>
     </div>
 );
 

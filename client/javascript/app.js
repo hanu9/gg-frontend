@@ -5,6 +5,9 @@ import { Provider } from "react-redux";
 import App from "./components/App";
 import store from "./store";
 
+import injectTapEventPlugin from "react-tap-event-plugin";
+injectTapEventPlugin();
+
 render((
     <Provider store={store}>
         <BrowserRouter>

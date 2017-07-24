@@ -1,7 +1,10 @@
 const express = require('express');
 const router = express.Router();
-var home = require(__base + 'controllers/home');
+const home = require(__base + 'controllers/home');
+const oauth = require(__base + 'controllers/oauth');
 
-router.get('/', home.homePage);
+router.get('/token', oauth.fetchToken, oauth.fetUserDetails, oauth.createGoldengateSession);
+
+router.get('/*', home.homePage);
 
 module.exports = router;
