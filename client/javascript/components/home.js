@@ -1,12 +1,12 @@
 import React from "react";
-import Paper from 'material-ui/Paper';
+import Paper from "material-ui/Paper";
 
 const style = {
-  height: 500,
-  width: 400,
-  textAlign: "center",
-  display: "block",
-  margin: "40px auto 0"
+    height: 500,
+    width: 400,
+    textAlign: "center",
+    display: "block",
+    margin: "40px auto 0"
 };
 
 const Home = (props) => (
